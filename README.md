@@ -1,1 +1,1 @@
-# Decentralised-Escrow-Program-
+# Decentralised-Escrow-Program-Solana
