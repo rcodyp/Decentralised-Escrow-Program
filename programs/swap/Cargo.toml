@@ -21,7 +21,12 @@ custom-panic = []
 
 
 [dependencies]
-anchor-lang = "0.32.1"
+anchor-lang = {version = "0.32.1", features = ["init-if-needed"]}
+anchor-spl = "0.32.1"
+
+
+[patch.crates-io]
+constant_time_eq = "=0.4.1"
 
 
 [lints.rust]
