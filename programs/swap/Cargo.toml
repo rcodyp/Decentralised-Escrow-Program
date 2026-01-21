@@ -25,9 +25,15 @@ anchor-lang = {version = "0.32.1", features = ["init-if-needed"]}
 anchor-spl = "0.32.1"
 
 
-[patch.crates-io]
-constant_time_eq = "=0.4.1"
+[toolchain]
+channel = "stable"
+
+
 
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }
+
+[patch.crates-io]
+constant_time_eq = "=0.3.1"
+blake3 = "=1.5.1" 
